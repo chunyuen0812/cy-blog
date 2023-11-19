@@ -1,0 +1,10 @@
+<div *ngFor="let article of articles">
+    <div class="card col-12 row-5" >
+        <div class="card-body">
+            <h5 class="card-title">{{article.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{article.author}}</h6>
+            <p class="card-text">{{article.content}}</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>

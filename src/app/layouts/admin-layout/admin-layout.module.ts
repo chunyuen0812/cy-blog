@@ -16,6 +16,9 @@ import { UpgradeComponent }         from '../../pages/upgrade/upgrade.component'
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { ArticlesComponent } from 'app/pages/articles/articles.component';
+import { ArticleDetailComponent } from 'app/pages/articles/article-detail/article-detail.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -32,6 +35,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
+    ArticlesComponent,
+    ArticleDetailComponent
   ]
 })
 
