@@ -17,7 +17,7 @@ import { UpgradeComponent }         from '../../pages/upgrade/upgrade.component'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ArticlesComponent } from 'app/pages/articles/articles.component';
-import { ArticleDetailComponent } from 'app/pages/articles/article-detail/article-detail.component';
+import { ArticleDetailComponent } from 'app/pages/article-detail/article-detail.component';
 
 @NgModule({
   imports: [

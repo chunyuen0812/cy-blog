@@ -1,10 +1,14 @@
 <div *ngFor="let article of articles">
-    <div class="card col-12 row-5" >
-        <div class="card-body">
-            <h5 class="card-title">{{article.title}}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{article.author}}</h6>
-            <p class="card-text">{{article.content}}</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
+    <div class="card col-12 row-5">
+        <mat-card class="card-body" (click)="onClickArticleCard(article.id)">
+            <mat-card-content>
+                <h5 class="card-title">{{article.title}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{article.author}}</h6>
+                <p class="card-text">
+                    {{(article.content.length > 280 ) ? (article.content | slice:0:280)+'...':(article.content)}}
+                </p>
+                <p class="card-text"><small class="text-muted">Last updated {{article.updateTime}} mins ago</small></p>
+            </mat-card-content>
+        </mat-card>
     </div>
 </div>
