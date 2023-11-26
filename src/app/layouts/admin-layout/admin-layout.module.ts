@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AdminLayoutRoutes } from './admin-layout.routing';
 
@@ -18,13 +19,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ArticlesComponent } from 'app/pages/articles/articles.component';
 import { ArticleDetailComponent } from 'app/pages/article-detail/article-detail.component';
+import { PublishComponent } from 'app/pages/publish/publish.componnet';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   declarations: [
     DashboardComponent,
@@ -36,7 +39,8 @@ import { ArticleDetailComponent } from 'app/pages/article-detail/article-detail.
     MapsComponent,
     NotificationsComponent,
     ArticlesComponent,
-    ArticleDetailComponent
+    ArticleDetailComponent,
+    PublishComponent
   ]
 })
 

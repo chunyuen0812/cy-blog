@@ -10,6 +10,7 @@ import { NotificationsComponent } from '../../pages/notifications/notifications.
 import { UpgradeComponent } from '../../pages/upgrade/upgrade.component';
 import { ArticlesComponent } from 'app/pages/articles/articles.component';
 import { ArticleDetailComponent } from 'app/pages/article-detail/article-detail.component';
+import { PublishComponent } from 'app/pages/publish/publish.componnet';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -22,5 +23,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'articles',        component: ArticlesComponent },
     { path: 'article-detail/:articleId',        component: ArticleDetailComponent },
+    { path: 'publish', component: PublishComponent },
 
 ];

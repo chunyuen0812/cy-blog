@@ -1,0 +1,14 @@
+<div>
+    <form (ngSubmit)="onSubmit()" [formGroup]="submitForm">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="title" class="form-control" id="title" formControlName="title">
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <textarea class="form-control row-12" id="content" rows="100" formControlName="content"></textarea>
+        </div>
+
+        <button class="btn btn-primary btn-block col-3 mx-auto" type="submit" [disabled]="!submitForm.valid">Submit</button>
+    </form>
+</div>

@@ -1,11 +1,49 @@
-<div>
-    <div class="card col-12 row-5">
-        <div class="card-body">
+<div class="row">
+    <div class="col-md-3">
+        <div class="card card-user">
+            <div class="image">
+                <img src="assets/img/damir-bosnjak.jpg" alt="...">
+            </div>
+            <div class="card-body">
+                <div class="author">
+                    <a href="#">
+                        <img class="avatar border-gray" alt="...">
+                        <h5 class="title">{{selectedArticle.author}}</h5>
+                    </a>
+                    <p class="description">
+                        @{{selectedArticle.author}}
+                    </p>
+                </div>
+                <p class="description text-center">
+                    {{selectedAuthor.profile}}
+                </p>
+            </div>
+            <div class="card-footer">
+                <hr>
+                <div class="button-container">
+                    <div class="row">
+                        <div class="mx-auto">
+                            <h5>{{selectedAuthor.total_publish}}
+                                <br>
+                                <small>Articles</small>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        <div class="card">
+            <div class="card-body">
                 <h5 class="card-title text-center">{{selectedArticle.title}}</h5>
                 <p class="card-text">
                     {{selectedArticle.content}}
                 </p>
-                <p class="card-text"><small class="text-muted">Last updated {{selectedArticle.updateTime}} mins ago</small></p>
+                <p class="card-text"><small class="text-muted">Last updated {{selectedArticle.updateTime}} mins
+                        ago</small></p>
+            </div>
         </div>
     </div>
 </div>
