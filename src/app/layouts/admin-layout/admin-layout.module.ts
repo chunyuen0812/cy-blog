@@ -20,6 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ArticlesComponent } from 'app/pages/articles/articles.component';
 import { ArticleDetailComponent } from 'app/pages/article-detail/article-detail.component';
 import { PublishComponent } from 'app/pages/publish/publish.componnet';
+import { EditorModule } from '@tinymce/tinymce-angular';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { PublishComponent } from 'app/pages/publish/publish.componnet';
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    EditorModule
   ],
   declarations: [
     DashboardComponent,

@@ -27,6 +27,7 @@ export class PublishComponent implements OnInit{
 
     onSubmit(){
         console.log(this.submitForm.value);
+        articles.push({id: 0, title: this.submitForm.get('title').value, content: this.submitForm.get('content').value,author:"test3",updateTime:Date()})
     }
     
 }

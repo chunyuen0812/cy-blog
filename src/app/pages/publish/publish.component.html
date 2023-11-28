@@ -6,7 +6,9 @@
         </div>
         <div class="mb-3">
             <label for="content" class="form-label">Content</label>
-            <textarea class="form-control row-12" id="content" rows="100" formControlName="content"></textarea>
+            <editor apiKey="prrpw3pu2ujy27ah3uqka9n07u9f6b5zy38o65hnmm4zyx37"
+            formControlName="content"
+            [init]="{}"></editor>
         </div>
 
         <button class="btn btn-primary btn-block col-3 mx-auto" type="submit" [disabled]="!submitForm.valid">Submit</button>

@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-
+import { EditorModule } from '@tinymce/tinymce-angular';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     ToastrModule.forRoot(),
     FooterModule,
     FixedPluginModule,
+    EditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
